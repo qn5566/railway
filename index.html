@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body, #container{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+    <title>下載安裝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+        body{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            background:#05849a;
+            text-align: center;
+        }
+        #info-img{
+            width: 100%;
+            margin: 0 auto;
+        }
+        #img-mapping{
+            position: absolute;
+            width: 116px;
+            height: 115px;
+        }
+    </style>
+
+
+    <!--<div id="img-mapping" coords="430,237,546,352" alt="Sun" style="width: 343.137px; height: 343.137px; top: 701.064px; left: 1271.97px;"></div>-->
+    <!--<area shape="rect" coords="430,237,546,352" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fyhz66-yun1.b0.upaiyun.com%2Fdown%2Fios%2Fstable%2Fipa%2F1.0.0.plist" alt="Sun">-->
+    <img id="info-img" src="./res/backpic.jpg" usemap="#planetmap">
+
+
+
+</div>
+<!-- <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> -->
+<!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+<script>
+    var isAndroid = navigator.userAgent.match('Android');
+    var isiOS = navigator.userAgent.match('Mac|iOS');
+
+    var newUrl = 'm.millions50.com/';
+
+    newUrl = 'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
+
+
+    window.location = newUrl;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://dl-web.dropbox.com/get/railway/railway.ipa?_download_id=1772386141178272670926728225561030319887997801346934024012428362305&amp;_notify_domain=www.dropbox.com&amp;_subject_uid=352625397&amp;dl=1&amp;w=AACMJgQhsLIH9FHZOtaaOX1y5SU0h4y5W2fs3paB2ZAGiA</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.meetstudio.railways.taiwanrailways.01</string>
+				<key>bundle-version</key>
+				<string>1.0.1</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>火車時刻表</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

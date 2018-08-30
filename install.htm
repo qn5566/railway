@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手机安装包下载</title>
+<body id='body'>
+<div data-role="page">
+    <div data-role="header">
+        <h1 style="text-align:center;">火車時刻表</h1>
+    </div>
+    <div data-role="content" style="text-align:center;">
+        <h2>iOS版</h2>
+        <h3>最新版本：<span id="version">x.x.x</span></h3>
+        <a id="install" data-role="button" href="javascript:alert('URL讀取失敗，請重新整理！')">
+            <div class="btn_download">手機APP下載</div>
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+var parse=(function(qs){
+		var arr={};
+		if(!qs)qs=location.search;
+		var b = qs.indexOf('?');
+		var e = qs.indexOf('#');
+		if(b >= 0){
+			qs = e < 0 ? qs.substr(b + 1) : qs.substring(b + 1,e);
+			if(qs.length > 0){
+				qs = qs.replace(/\+/g, ' ');
+				var a = qs.split('&');
+				for (var i = 0; i < a.length; i++) {
+					var t = a[i].split('=');
+					var n = decodeURIComponent(t[0]);
+					var v = (t.length == 2) ? decodeURIComponent(t[1]) : n;
+					arr[n] = v;
+				}
+			}
+		}
+		return(arr);
+});
+var loadpage=(function(){
+    var request = parse(location.search);
+    if(!request.hasOwnProperty('version')){
+        document.getElementById('body').innerHTML='Invalid Request';
+        return;
+    }
+
+    var version = request.version;
+    document.getElementById('version').innerHTML = version;
+//    var url =  'itms-services://?action=download-manifest&url=https://static.xinuyl.com/resources/down/' + version + '.plist';
+    var url =  'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
+    try{
+        console.log(url);
+    }catch(ex){
+        alert(url);
+    }
+    document.getElementById('install').href=url;
+    document.location.href = url;
+});loadpage();
+</script>
+
+</body>
+</html>
