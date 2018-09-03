@@ -48,12 +48,20 @@
     var isAndroid = navigator.userAgent.match('Android');
     var isiOS = navigator.userAgent.match('Mac|iOS');
 
-    var newUrl = 'm.millions50.com/';
+    var newUrl = 'http://lifunny.me/';
 
-    newUrl = 'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
-
-
+if (isAndroid) {
+    
+    //alert('手机端APP下载暂未开通，请稍候.');
+    newUrl = 'https://play.google.com/store/apps/details?id=com.meetstudio.railways.taiwanrailways';
     window.location = newUrl;
+} else if (isiOS) {
+    newUrl = 'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
+    window.location = newUrl;
+}else{
+    // newUrl = 'https://play.google.com/store/apps/details?id=com.meetstudio.railways.taiwanrailways';
+    window.location = newUrl;  
+}
 
 </script>
 </body>
