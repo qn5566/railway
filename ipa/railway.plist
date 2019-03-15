@@ -17,13 +17,13 @@
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>http://lifunny.me/app/railways/res/57.png</string>
+					<string>https://github.com/qn5566/railway/raw/master/ipa/57.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>http://lifunny.me/app/railways/res/512.png</string>
+					<string>https://github.com/qn5566/railway/raw/master/ipa/512.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -31,7 +31,7 @@
 				<key>bundle-identifier</key>
 				<string>com.meetstudio.railways.taiwanrailways.01</string>
 				<key>bundle-version</key>
-				<string>1.0.1</string>
+				<string>1.01</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>

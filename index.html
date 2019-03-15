@@ -53,10 +53,11 @@
 if (isAndroid) {
     
     //alert('手机端APP下载暂未开通，请稍候.');
-    newUrl = 'https://play.google.com/store/apps/details?id=com.meetstudio.railways.taiwanrailways';
+    newUrl = 'https://play.google.com/store/apps/details?id=com.meetstudio.taiwanrailways';
     window.location = newUrl;
 } else if (isiOS) {
-    newUrl = 'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
+    // newUrl = 'itms-services://?action=download-manifest&url=http://lifunny.me/app/railways/ipa/railway.plist';
+    newUrl = 'itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/qn5566/railway/master/ipa/railway.plist';
     window.location = newUrl;
 }else{
     // newUrl = 'https://play.google.com/store/apps/details?id=com.meetstudio.railways.taiwanrailways';
